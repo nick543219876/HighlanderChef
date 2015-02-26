@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.highlanderchef.MakeARecipe2" >
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SaveAsDraftPressed"
+        android:text="@string/SaveDraft" />
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/makearecipe2header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/MakeARecipe2Header" />
+
+            <TextView
+                android:id="@+id/listofaddedingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/makearecipe2header"
+                android:layout_marginTop="18dp"
+                android:text="@string/no_ingredients_added" />
+
+            <EditText
+                android:id="@+id/ingredientmeasurement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/addaningredient"
+                android:ems="10"
+                android:hint="@string/Ingredient_Amount"
+                android:inputType="text"
+                android:imeOptions="actionDone" />
+
+            <EditText
+                android:id="@+id/addaningredient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/listofaddedingredients"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:hint="@string/Add_an_Ingredient"
+                android:inputType="text"
+                android:imeOptions="actionNext" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ingredientmeasurement"
+                android:onClick="addAnotherIngredientPressed"
+                android:text="@string/Add_another_ingredient_button" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/button1"
+                android:onClick="addDirectionsPressed"
+                android:text="Continue to Directions" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

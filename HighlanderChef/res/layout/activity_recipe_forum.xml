@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rflayout" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.highlanderchef.RecipeForum" >
+	
+	<ScrollView
+	 	android:id="@+id/ScrollView1"
+	 	android:layout_width="match_parent"
+	  	android:layout_height="wrap_content" >
+
+		 <LinearLayout        
+				android:id="@+id/linearLayoutResults"
+		     	android:layout_width="match_parent"
+		      	android:layout_height="wrap_content"
+		      	android:orientation="vertical" >
+
+		     <Button
+		         android:id="@+id/button1"
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:text="View User's Homepage"
+		         android:onClick="ViewHomePage" />
+		     	<Button
+	    android:id="@+id/button2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Favorite!"
+	    android:onClick="addFavorite" />
+ 
+		 </LinearLayout>
+
+	
+	</ScrollView>
+
+
+
+</LinearLayout>

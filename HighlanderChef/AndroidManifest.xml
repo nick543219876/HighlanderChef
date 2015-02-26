@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.highlanderchef"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="tests for HighlanderChef"
+        android:targetPackage="com.highlanderchef" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name=".StartupScreen"
+            android:label="@string/title_activity_startup_screen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/title_activity_signup"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BrowseActivity"
+            android:label="@string/title_activity_browse"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/title_activity_main_menu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MakeARecipe1"
+            android:label="@string/title_activity_make_arecipe1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ViewMyRecipes"
+            android:label="@string/title_activity_view_my_recipes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BrowseResults"
+            android:label="@string/title_activity_browse_results"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MakeARecipe2"
+            android:label="@string/title_activity_make_arecipe2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MakeARecipe3"
+            android:label="@string/title_activity_make_arecipe3"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RecipeForum"
+            android:label="@string/title_activity_recipe_forum"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".UserHomepage"
+            android:label="@string/title_activity_user_homepage" >
+        </activity>
+        <activity
+            android:name=".ImageComp"
+            android:label="@string/title_activity_image_comp" >
+        </activity>
+        <activity
+            android:name=".Camera"
+            android:label="@string/title_activity_camera" >
+        </activity>
+        <activity
+            android:name=".Cam"
+            android:label="@string/title_activity_cam" >
+        </activity>
+        <activity
+            android:name=".PreferencesActivity"
+            android:label="@string/title_activity_preferences" >
+        </activity>
+        <activity
+            android:name=".QuestionBoardActivity"
+            android:label="@string/title_activity_question_board" >
+        </activity>
+    </application>
+
+</manifest>
